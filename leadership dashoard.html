@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership Dashboard</title>
+    <style>
+        :root {
+          --bg-color: #0d1117;
+         --card-bg: #161b22;
+         --text-color: #c9d1d9;
+         --accent-color: #58a6ff;
+         --success: #238636;
+        }
+        body {
+         background-color: var(--bg-color);
+         color: var(--text-color);
+         font-family: 'Segoe UI', sans-serif;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100vh;
+         margin: 0;
+        }
+        .dashboard {
+         background: var(--card-bg);
+         padding: 2rem;
+         border-radius: 12px;
+         border: 1px solid #30363d;
+         width: 450px;
+         box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+        header h1 {
+         color: var(--accent-color);
+         margin: 0;
+         font-size: 1.5rem;
+        }
+        .grid { margin-top: 20px; }
+        .stat-card { margin-bottom: 20px; }
+        .progress-bar {
+         background: #30363d;
+         height: 8px;
+         border-radius: 4px;
+         margin: 8px 0;
+        }
+        .fill {
+          background: var(--success);
+          height: 100%;
+          border-radius: 4px;
+          box-shadow: 0 0 10px var(--success);
+        }
+        .quote-section {
+          border-top: 1px solid #30363d;
+          padding-top: 15px;
+          font-style: italic;
+          color: #8b949e;
+          font-size: 0.9rem;
+          text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>Tech Leader Status</h1>
+            <p>Date: January 2026</p>
+        </header>
+        <div class="grid">
+            <div class="stat-card">
+                <h3>Communication</h3>
+                <div class="progress-bar"><div class="fill" style="width: 90%;"></div></div>
+                <span>High Impact</span>
+            </div>
+            <div class="stat-card">
+                <h3>Code Literacy</h3>
+                <div class="progress-bar"><div class="fill" style="width: 85%;"></div></div>
+                <span>HTML/CSS Active</span>
+            </div>
+            <div class="stat-card">
+                <h3>Strategy</h3>
+                <div class="progress-bar"><div class="fill" style="width: 75%;"></div></div>
+                <span>Q1 Focused</span>
+            </div>
+        </div>
+        <div class="quote-section">
+            <p>"Management is doing things right; leadership is doing the right things."</p>
+        </div>
+    </div>
+</body>
+</html>
